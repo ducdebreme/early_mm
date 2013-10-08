@@ -1,0 +1,30 @@
+
+// typographic settings
+$sans-font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+$serif-font-family: Georgia, "Times New Roman", Times, serif;
+$mono-font-family: Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$base-font-size: 20px;
+$base-line-height: 30px; 
+
+// device sizes
+// Extra small screen / phone
+$screen-phone:                  480px;
+
+// Small screen / tablet
+$screen-tablet:                  768px;
+
+// Medium screen / desktop
+$screen-desktop:                  992px;
+
+// Large screen / wide desktop
+$screen-lg-desktop:                  1200px;
+
+
+
+// grid settings
+$total-columns: 12;
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+
+

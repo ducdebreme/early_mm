@@ -1,0 +1,30 @@
+@import "susy";
+
+//===================================
+@media (min-width: $screen-tablet) {
+  .container {
+    @include container;
+    // @include susy-grid-background;
+  }
+
+  .col-md-2 {
+    @include span-columns(2);
+  }
+  .col-md-4 {
+    @include span-columns(4);
+  }
+  .col-md-6 {
+    @include span-columns(6);
+  }
+  .col-md-8 {
+    @include span-columns(8);
+  }
+  .col-md-10 {
+    @include span-columns(10);
+  }
+
+  .omega {
+    @include omega();
+  }
+
+}
