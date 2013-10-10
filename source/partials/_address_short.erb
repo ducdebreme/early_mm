@@ -1,0 +1,11 @@
+<!-- TODO kann man das nicht mit Templates generieren ?? -->
+
+  <!-- with microformat @seealso http://html5doctor.com/the-address-element/ -->
+  <div class="vcard">
+    <div class="fn h5"><a class="url" href="#"><%= "#{name}" %></a></div>
+    <p class="adr">
+      <span class="street-address"><%= "#{street}" %></span><br>
+      <span class="postal-code">1070</span> <span class="region"><%= "#{place}" %></span><br>
+      <span class="country-name"><%= "#{country}" %></span>
+    </p>
+  </div>

@@ -15,50 +15,59 @@ title: TEST
     </div>
   </header>  
   
-  <!-- BEGIN MAIN CONTENT ROW -->
-  <article class="row">
-    <div class="col-md-4">
-      <img src="http://placekitten.com/g/300/300" style="width: 100%" /> 
+  <article>
+
+    <!-- BEGIN MAIN CONTENT ROW -->
+    <div class="row">
+      <div class="col-md-4">
+        <img src="http://placekitten.com/g/300/300" style="width: 100%" /> 
+      </div>
+
+      <div class="col-md-6">
+
+
+        <p><strong>Anfänger</strong> können ab 4. Oktober bei Pia Brocza die Grundlagen des barocken Tanzstils lernen. Dieser Basiskurs findet an Freitagen (14-tägig) von 17.00 bis 17.50h statt. Anfänger, die noch etwas mehr üben wollen, können jeweils im Anschluß daran das Körpertraining (18-18.50h) besuchen.</p>
+        <p>Für <strong>Fortgeschrittene</strong> und <strong>Anfänger mit guten Vorkenntnissen</strong> eignet sich das Barocktanztraining&nbsp; (18-20h, 14-tägig, ab 4. Oktober). Nach Körpertraining und Tanztechnik wird hier an ausgewählten Passagen barocker Choreographien gearbeitet, beginnend mit dem Paartanz <em>L‘ Allemande</em> von L. G. Pécour zu Musik von A. Campra.</p>
+        <p>Die genauen Kursbeschreibungen finden sich auf der zeitenTANZ-Website unter „Kurse und Workshops – Barocktanztraining“!</p>
+
+      </div>
+      <div class="col-md-2 omega">
+        <!-- tags -->
+        <a class="label label-primary" href="#">All levels</a>
+        <a class="label label-primary" href="#">Baroque</a>
+        <a class="label label-primary" href="#">Ongoing classes</a>
+
+      </div>
+
+
     </div>
+    <!-- END MAIN CONTENT ROW -->
 
-    <div class="col-md-6">
+    <!-- BEGIN MIDDLE ROW : VENUE -->
+    <!-- include a partial with data -->
+    <%= partial( :address_with_map, :locals => { 
+      :name => "Tanzstudio Manhardt AA", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
+    })  %>      
+    <!-- END MIDDLE ROW -->
 
+    <!-- BEGIN ROW : CONTACTS -->
+    <div class="row">
+      <div class="col-md-4">
+        <!-- INVOLVED -->
+        <!-- include a partial with data -->
+        <%= partial( :address_short, :locals => { 
+          :name => "Pia Brocza", :street => "Hausstrasse 3", :place => "Wien", :country => "Austria"
+        })  %>
 
-      <p><strong>Anfänger</strong> können ab 4. Oktober bei Pia Brocza die Grundlagen des barocken Tanzstils lernen. Dieser Basiskurs findet an Freitagen (14-tägig) von 17.00 bis 17.50h statt. Anfänger, die noch etwas mehr üben wollen, können jeweils im Anschluß daran das Körpertraining (18-18.50h) besuchen.</p>
-      <p>Für <strong>Fortgeschrittene</strong> und <strong>Anfänger mit guten Vorkenntnissen</strong> eignet sich das Barocktanztraining&nbsp; (18-20h, 14-tägig, ab 4. Oktober). Nach Körpertraining und Tanztechnik wird hier an ausgewählten Passagen barocker Choreographien gearbeitet, beginnend mit dem Paartanz <em>L‘ Allemande</em> von L. G. Pécour zu Musik von A. Campra.</p>
-      <p>Die genauen Kursbeschreibungen finden sich auf der zeitenTANZ-Website unter „Kurse und Workshops – Barocktanztraining“!</p>
-
+      </div>
+      <div class="col-md-4">
+        <!-- INVOLVED -->
+        <!-- include a partial with data -->
+        <%= partial( :address_short, :locals => { 
+          :name => "Bernd Niedecken", :street => "Innsbrucker Str. 97", :place => "Freiburg", :country => "Germany"
+        })  %>
+      </div>
     </div>
-    <div class="col-md-2 omega">
-      <!-- tags -->
-      <a class="label label-primary" href="#">All levels</a>
-      <a class="label label-primary" href="#">Baroque</a>
-      <a class="label label-primary" href="#">Ongoing classes</a>
-
-    </div>
-
-
+    <!-- END MIDDLE ROW -->
   </article>
-  <!-- BEGIN MAIN CONTENT ROW -->
-
-  <!-- BEGIN MIDDLE ROW : VENUE -->
-  {% include early-venue-address.html %}
-  <!-- END MIDDLE ROW -->
-
-  <!-- BEGIN ROW : CONTACTS -->
-  <div>out of row</div>
-  
-  <article class="row">IN A ROW
-  </div>
-
-  <article class="row">
-    <div class="col-md-4">
-      {% include early-contact-address-1.html %}
-    </div>
-    <div class="col-md-4">
-      {% include early-contact-address-2.html %}
-    </div>
-  </div>
-  <!-- END MIDDLE ROW -->
-
 </div>

@@ -33,7 +33,18 @@ title: TEST
     <div class="col-md-4">
       <img src="http://placekitten.com/g/300/200" style="width: 99.5%" /> 
 
-      {% include early-contact-address-1.html %}
+      <!-- INVOLVED -->
+      <!-- include a partial with data -->
+      <%= partial( :address_short, :locals => { 
+        :name => "Pia Brocza", :street => "Hausstrasse 3", :place => "Wien", :country => "Austria"
+      })  %>
+
+      <!-- INVOLVED -->
+      <!-- include a partial with data -->
+      <%= partial( :address_short, :locals => { 
+        :name => "Bernd Niedecken", :street => "Innsbrucker Str. 97", :place => "Freiburg", :country => "Germany"
+      })  %>
+
 
     </div>
     <div class="col-md-2 omega">
@@ -51,7 +62,12 @@ title: TEST
   <!-- BEGIN MIDDLE ROW -->
   <div class="row">
     <div class="col-md-10">
-      {% include early-venue-address.html %}
+
+      <!-- include a partial with data -->
+      <%= partial( :address_with_map, :locals => { 
+        :name => "Tanzstudio Manhardt AA", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
+      })  %>      
+
     </div>
   </div>
   <!-- END MIDDLE ROW -->

@@ -1,5 +1,9 @@
 @import "susy";
 
+.row {
+  clear: both;
+}
+
 //===================================
 @media (min-width: $screen-tablet) {
   .container {
