@@ -5,9 +5,17 @@
 
 @import "compass/reset";
 @import "variables";
-
+@import "compass";
 @import "compass/layout/grid-background"; // siehe auch http://compass-style.org/reference/compass/layout/grid_background/
 
 
 @import "type";
 @import "grid";
+
+body {
+  @include background(linear-gradient(top, #9BB8D8, #F8FAFC));
+}
+
+.page {
+	background-color: white;
+}

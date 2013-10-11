@@ -8,7 +8,6 @@
 @media (min-width: $screen-tablet) {
   .container {
     @include container;
-    // @include susy-grid-background;
   }
 
   .col-md-2 {
