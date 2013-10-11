@@ -2,72 +2,74 @@
 title: TEST
 ---
 
-<div class="container page">
+<article class="page">
+  <div class="container page-inner">
 
-  <header>
-    <div class="row">
+    <header>
+      <div class="row">
 
-      <h1>Barocktanztraining für Anfänger und Fortgeschrittene</h1>
+        <h1>Barocktanztraining für Anfänger und Fortgeschrittene</h1>
 
-      <div class="h3">with <a href="#">Bernd Niedecken</a>, <a href="#">Pia Brocza</a></div>
+        <div class="h3">with <a href="#">Bernd Niedecken</a>, <a href="#">Pia Brocza</a></div>
 
-      <div class="h3">4 October 2013 / Vienna, Austria</div>
-    </div>
-  </header>  
-  
-  <article>
-
-    <!-- BEGIN MAIN CONTENT ROW -->
-    <div class="row">
-      <div class="col-md-4">
-        <img src="http://placehold.it/300x300" style="width: 100%" /> 
+        <div class="h3">4 October 2013 / Vienna, Austria</div>
       </div>
+    </header>  
 
-      <div class="col-md-6">
+    <article>
 
+      <!-- BEGIN MAIN CONTENT ROW -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="http://placehold.it/300x300" style="width: 100%" /> 
+        </div>
 
-        <p><strong>Anfänger</strong> können ab 4. Oktober bei Pia Brocza die Grundlagen des barocken Tanzstils lernen. Dieser Basiskurs findet an Freitagen (14-tägig) von 17.00 bis 17.50h statt. Anfänger, die noch etwas mehr üben wollen, können jeweils im Anschluß daran das Körpertraining (18-18.50h) besuchen.</p>
-        <p>Für <strong>Fortgeschrittene</strong> und <strong>Anfänger mit guten Vorkenntnissen</strong> eignet sich das Barocktanztraining&nbsp; (18-20h, 14-tägig, ab 4. Oktober). Nach Körpertraining und Tanztechnik wird hier an ausgewählten Passagen barocker Choreographien gearbeitet, beginnend mit dem Paartanz <em>L‘ Allemande</em> von L. G. Pécour zu Musik von A. Campra.</p>
-        <p>Die genauen Kursbeschreibungen finden sich auf der zeitenTANZ-Website unter „Kurse und Workshops – Barocktanztraining“!</p>
-
-      </div>
-      <div class="col-md-2 omega">
-        <!-- tags -->
-        <a class="label label-primary" href="#">All levels</a>
-        <a class="label label-primary" href="#">Baroque</a>
-        <a class="label label-primary" href="#">Ongoing classes</a>
-
-      </div>
+        <div class="col-md-6">
 
 
-    </div>
-    <!-- END MAIN CONTENT ROW -->
+          <p><strong>Anfänger</strong> können ab 4. Oktober bei Pia Brocza die Grundlagen des barocken Tanzstils lernen. Dieser Basiskurs findet an Freitagen (14-tägig) von 17.00 bis 17.50h statt. Anfänger, die noch etwas mehr üben wollen, können jeweils im Anschluß daran das Körpertraining (18-18.50h) besuchen.</p>
+          <p>Für <strong>Fortgeschrittene</strong> und <strong>Anfänger mit guten Vorkenntnissen</strong> eignet sich das Barocktanztraining&nbsp; (18-20h, 14-tägig, ab 4. Oktober). Nach Körpertraining und Tanztechnik wird hier an ausgewählten Passagen barocker Choreographien gearbeitet, beginnend mit dem Paartanz <em>L‘ Allemande</em> von L. G. Pécour zu Musik von A. Campra.</p>
+          <p>Die genauen Kursbeschreibungen finden sich auf der zeitenTANZ-Website unter „Kurse und Workshops – Barocktanztraining“!</p>
 
-    <!-- BEGIN MIDDLE ROW : VENUE -->
-    <!-- include a partial with data -->
-    <%= partial( :address_with_map, :locals => { 
-      :name => "Tanzstudio Manhardt AA", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
-    })  %>      
-    <!-- END MIDDLE ROW -->
+        </div>
+        <div class="col-md-2 omega">
+          <!-- tags -->
+          <a class="label label-primary" href="#">All levels</a>
+          <a class="label label-primary" href="#">Baroque</a>
+          <a class="label label-primary" href="#">Ongoing classes</a>
 
-    <!-- BEGIN ROW : CONTACTS -->
-    <div class="row">
-      <div class="col-md-4">
-        <!-- INVOLVED -->
-        <!-- include a partial with data -->
-        <%= partial( :address_short, :locals => { 
-          :name => "Pia Brocza", :street => "Hausstrasse 3", :place => "Wien", :country => "Austria"
-        })  %>
+        </div>
+
 
       </div>
-      <div class="col-md-4">
-        <!-- INVOLVED -->
-        <!-- include a partial with data -->
-        <%= partial( :address_short, :locals => { 
-          :name => "Bernd Niedecken", :street => "Innsbrucker Str. 97", :place => "Freiburg", :country => "Germany"
-        })  %>
+      <!-- END MAIN CONTENT ROW -->
+
+      <!-- BEGIN MIDDLE ROW : VENUE -->
+      <!-- include a partial with data -->
+      <%= partial( :address_with_map, :locals => { 
+        :name => "Tanzstudio Manhardt AA", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
+      })  %>      
+      <!-- END MIDDLE ROW -->
+
+      <!-- BEGIN ROW : CONTACTS -->
+      <div class="row">
+        <div class="col-md-4">
+          <!-- INVOLVED -->
+          <!-- include a partial with data -->
+          <%= partial( :address_short, :locals => { 
+            :name => "Pia Brocza", :street => "Hausstrasse 3", :place => "Wien", :country => "Austria"
+          })  %>
+
+        </div>
+        <div class="col-md-4">
+          <!-- INVOLVED -->
+          <!-- include a partial with data -->
+          <%= partial( :address_short, :locals => { 
+            :name => "Bernd Niedecken", :street => "Innsbrucker Str. 97", :place => "Freiburg", :country => "Germany"
+          })  %>
+        </div>
       </div>
-    </div>
-    <!-- END MIDDLE ROW -->
-  </article>
-</div>
+      <!-- END MIDDLE ROW -->
+    </article>
+  </div>
+</article>
