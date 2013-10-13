@@ -10,15 +10,24 @@
 
 
 @import "type";
-@import "grid";
+@import "grid"; 
 
-body {
-  @include background(linear-gradient(top, #9BB8D8, #F8FAFC));
-}
 
+/* body background color */
 .page {
-	margin: 0 3em;
+  margin: 0 0.5em;
+  padding: 0 0.5em;
 }
 .page-inner {
 	background-color: white;
+}
+
+@media (min-width: $screen-tablet) {
+  .page {
+    margin: 0 4em;
+  }
+  body {
+    @include background(linear-gradient(top, #9BB8D8, #F8FAFC));
+  }
+  
 }
