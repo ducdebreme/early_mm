@@ -39,3 +39,6 @@ p {
   @include padding-trailer(0.5);
 }
 
+small, .small {
+  @include adjust-font-size-to(0.75 * $base-font-size); 
+}
