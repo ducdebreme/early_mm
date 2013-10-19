@@ -27,7 +27,27 @@
     margin: 0 4em;
   }
   body {
+    // light blue background
     @include background(linear-gradient(top, #9BB8D8, #F8FAFC));
   }
   
 }
+
+/* from http://blog.teamtreehouse.com/a-better-clearfix-with-sass */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.section {
+  @extend .clearfix;
+  @include padding-trailer(2);
+
+  h3 {
+    @include background(linear-gradient(top, #f0f0f0, #fff));
+  }
+}
+
