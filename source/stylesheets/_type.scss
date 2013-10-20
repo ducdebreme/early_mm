@@ -11,7 +11,6 @@ body {
   //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   font-family: $serif-font-family;
   @include adjust-font-size-to($base-font-size);
-  &:hover {@include debug-vertical-alignment;}
 }
 
 // sizes @see http://lamb.cc/typograph/
@@ -31,9 +30,17 @@ h5 {
   @include adjust-font-size-to(1.1667 * $base-font-size); 
 }
 //add extra space before headlines
-// h1,h2,h3,h4,h5 {
-//   @include padding-leader(0.5);  
-// }
+.padding-top {
+  @include padding-leader(0.5);  
+}
+
+.title {
+  @extend .padding-top;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 700;
+}
 
 p {
   @include padding-trailer(0.5);

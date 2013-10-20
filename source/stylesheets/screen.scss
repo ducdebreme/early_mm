@@ -19,7 +19,8 @@
   padding: 0 0.5em;
 }
 .page-inner {
-	background-color: white;
+  background-color: white;
+  &:hover {@include debug-vertical-alignment;}
 }
 
 @media (min-width: $screen-tablet) {
