@@ -1,77 +1,94 @@
 ---
-title: TEST
+title: TEST2
 ---
 
-<div class="container ">
+<article class="page">
+  <div class="container page-inner">
 
-  <header>
-    <div class="row">
-      <h1>Barocktanztraining für Anfänger und Fortgeschrittene</h1>
+    <header>
+      <div class="row">
 
-      <div class="h3">with <a href="#">Bernd Niedecken</a>, <a href="#">Pia Brocza</a></div>
-    </div>
+        <h1 class="title">Barocktanztraining für Anfänger und Fortgeschrittene</h1>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="h3">4 October 2013 - 4 October 2013</div>
+        <ul class="event-metadata row">
+          <li class="involved">with <a href="#">Bernd Niedecken</a>, <a href="#">Pia Brocza</a></li>
+          <li class="col-md-4"><span class="date">4. - 6. November 2013</span></li>
+          <li class="col-md-6"><span class="place">Vienna in Austria</span></li>
+        </ul>
+
       </div>
-      <div class="col-md-4">
-        <div class="h3">Vienna, Austria</div>
+    </header>  
+
+    <article>
+
+      <!-- BEGIN MAIN CONTENT ROW -->
+      <div class="row section">
+        <div class="col-md-4">
+          <img src="http://placehold.it/300x300" style="width: 100%" /> 
+        </div>
+
+        <div class="col-md-6">
+
+          <%= partial("text/event-detail-description") %>
+ 
+        </div>
+        <div class="col-md-2 omega">
+          <!-- tags -->
+          <a class="label label-primary" href="#">All levels</a>
+          <a class="label label-primary" href="#">Baroque</a>
+          <a class="label label-primary" href="#">Ongoing classes</a>
+        </div>
       </div>
-    </div>
-  </header>  
-  
-  <!-- BEGIN MAIN CONTENT ROW -->
-  <article class="row">
-    <div class="col-md-6">
+      <!-- END MAIN CONTENT ROW -->
 
-      <p><strong>Anfänger</strong> können ab 4. Oktober bei Pia Brocza die Grundlagen des barocken Tanzstils lernen. Dieser Basiskurs findet an Freitagen (14-tägig) von 17.00 bis 17.50h statt. Anfänger, die noch etwas mehr üben wollen, können jeweils im Anschluß daran das Körpertraining (18-18.50h) besuchen.</p>
-      <p>Für <strong>Fortgeschrittene</strong> und <strong>Anfänger mit guten Vorkenntnissen</strong> eignet sich das Barocktanztraining&nbsp; (18-20h, 14-tägig, ab 4. Oktober). Nach Körpertraining und Tanztechnik wird hier an ausgewählten Passagen barocker Choreographien gearbeitet, beginnend mit dem Paartanz <em>L‘ Allemande</em> von L. G. Pécour zu Musik von A. Campra.</p>
-      <p>Die genauen Kursbeschreibungen finden sich auf der zeitenTANZ-Website unter „Kurse und Workshops – Barocktanztraining“!</p>
-
-    </div>
-    <div class="col-md-4">
-      <img src="http://placehold.it/300x300" style="width: 99.5%" /> 
-
-      <!-- INVOLVED -->
-      <!-- include a partial with data -->
-      <%= partial( :address_short, :locals => { 
-        :name => "Pia Brocza", :street => "Hausstrasse 3", :place => "Wien", :country => "Austria"
-      })  %>
-
-      <!-- INVOLVED -->
-      <!-- include a partial with data -->
-      <%= partial( :address_short, :locals => { 
-        :name => "Bernd Niedecken", :street => "Innsbrucker Str. 97", :place => "Freiburg", :country => "Germany"
-      })  %>
-
-
-    </div>
-    <div class="col-md-2 omega">
-      <!-- tags -->
-      <a class="label label-primary" href="#">All levels</a>
-      <a class="label label-primary" href="#">Baroque</a>
-      <a class="label label-primary" href="#">Ongoing classes</a>
-
-    </div>
-
-
-  </article>
-  <!-- BEGIN MAIN CONTENT ROW -->
-
-  <!-- BEGIN MIDDLE ROW -->
-  <div class="row">
-    <div class="col-md-10">
-
+      <!-- BEGIN MIDDLE ROW : VENUE -->
       <!-- include a partial with data -->
       <%= partial( :address_with_map, :locals => { 
         :name => "Tanzstudio Manhardt AA", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
       })  %>      
+      <!-- END MIDDLE ROW -->
 
-    </div>
+
+      <!-- BEGIN ROW : INVOLVED -->
+      <!-- translate here depending on the event type -->
+      <div class="row section">
+        <h3>Teachers</h3>
+        <div class="col-md-4">
+          <!-- INVOLVED -->
+          <!-- include a partial with data -->
+          <%= partial( :address_short, :locals => { 
+            :name => "Pia Brocza", :street => "Hausstrasse 3", :place => "Wien", :country => "Austria"
+          })  %>
+
+        </div>
+        <div class="col-md-4">
+          <!-- INVOLVED -->
+          <!-- include a partial with data -->
+          <%= partial( :address_short, :locals => { 
+            :name => "Bernd Niedecken", :street => "Innsbrucker Str. 97", :place => "Freiburg", :country => "Germany"
+          })  %>
+        </div>
+      </div>
+
+
+      <!-- BEGIN ROW : INVOLVED -->
+      <!-- translate here depending on the event type -->
+      <div class="row section">
+        <h3>Contacts</h3>
+        <div class="col-md-6">
+          <!-- INVOLVED -->
+          <!-- include a partial with data -->
+          <%= partial( :address_short, :locals => { 
+            :name => "zeitenTANZ - Verein zur Förderung des historischen Tanzes in Österreich", 
+            :street => "Lobmeyrgasse 5/44", :place => "Wien", 
+            :country => "Austria"
+          })  %>
+
+        </div>
+      </div>
+
+
+      <!-- END MIDDLE ROW -->
+    </article>
   </div>
-  <!-- END MIDDLE ROW -->
-
-  
-
-</div>
+</article>

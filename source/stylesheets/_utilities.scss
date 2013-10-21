@@ -1,0 +1,9 @@
+
+/* from http://blog.teamtreehouse.com/a-better-clearfix-with-sass */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

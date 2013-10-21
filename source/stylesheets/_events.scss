@@ -1,0 +1,8 @@
+
+/* styles for events */
+
+.event-metadata {
+	.date, .place {
+		@extend h4;
+	}
+}

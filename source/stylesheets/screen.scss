@@ -7,13 +7,21 @@
 @import "variables";
 @import "compass";
 @import "compass/layout/grid-background"; // siehe auch http://compass-style.org/reference/compass/layout/grid_background/
+@import "sassy-buttons";
 
-
+@import "utilities";
 @import "type";
 @import "grid"; 
 @import "animenu/animenu";
 
-/* body background color */
+// custom stuff
+@import "events"; 
+
+body {
+  color: $text-color;
+}
+
+/* the page's backgroud with a lightblue gradient */
 .page {
   margin: 0 0.5em;
   padding: 0 0.5em;
@@ -31,18 +39,11 @@
     // light blue background
     @include background(linear-gradient(top, #9BB8D8, #F8FAFC));
   }
-  
 }
 
-/* from http://blog.teamtreehouse.com/a-better-clearfix-with-sass */
-.clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
 
+
+/* separation part of a page */
 .section {
   @extend .clearfix;
   @include padding-trailer(2);
@@ -52,3 +53,16 @@
   }
 }
 
+.hover {
+  .hover-show {
+    width: 33%;
+    display: none;
+  }
+  &:hover .hover-show {
+    -webkit-transition: display 1s ease-in;
+    display: block;
+  }
+}
+.button {
+  @include sassy-button;
+}
