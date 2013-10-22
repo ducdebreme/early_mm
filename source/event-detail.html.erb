@@ -19,7 +19,7 @@ title: TEST2
       </div>
     </header>  
 
-    <article>
+    <div>
 
       <!-- BEGIN MAIN CONTENT ROW -->
       <div class="row section">
@@ -44,7 +44,7 @@ title: TEST2
       <!-- BEGIN MIDDLE ROW : VENUE -->
       <!-- include a partial with data -->
       <%= partial( :address_with_map, :locals => { 
-        :name => "Tanzstudio Manhardt AA", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
+        :name => "Tanzstudio Manhardt ", :street => "Neubaugasse 38", :place => "Wien", :country => "Austria"
       })  %>      
       <!-- END MIDDLE ROW -->
 
@@ -71,12 +71,12 @@ title: TEST2
       </div>
 
 
-      <!-- BEGIN ROW : INVOLVED -->
+      <!-- BEGIN ROW : CONTACT -->
       <!-- translate here depending on the event type -->
       <div class="row section">
         <h3>Contacts</h3>
         <div class="col-md-6">
-          <!-- INVOLVED -->
+          <!-- CONTACT -->
           <!-- include a partial with data -->
           <%= partial( :address_short, :locals => { 
             :name => "zeitenTANZ - Verein zur Förderung des historischen Tanzes in Österreich", 
@@ -89,6 +89,6 @@ title: TEST2
 
 
       <!-- END MIDDLE ROW -->
-    </article>
+    </div>
   </div>
 </article>

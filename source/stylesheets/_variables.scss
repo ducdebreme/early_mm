@@ -20,7 +20,7 @@ $brand-info:            #5bc0de !default;
 
 
 $text-color: $gray-dark;
-
+$link-color: blue;
 
 // typographic settings
 $sans-font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -29,6 +29,8 @@ $mono-font-family: Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $base-font-size: 18px;
 $base-line-height: 24px; 
+
+$font-size-small: $base-font-size;
 
 // device sizes
 // Extra small screen / phone
@@ -51,3 +53,15 @@ $column-width   : 4em;            // each column is 4em wide
 $gutter-width   : 1em;            // 1em gutters between columns
 
 
+// Labels
+// -------------------------
+
+$label-default-bg:            $gray-light !default;
+$label-primary-bg:            $brand-primary !default;
+$label-success-bg:            $brand-success !default;
+$label-info-bg:               $brand-info !default;
+$label-warning-bg:            $brand-warning !default;
+$label-danger-bg:             $brand-danger !default;
+
+$label-color:                 #fff !default;
+$label-link-hover-color:      #fff !default;

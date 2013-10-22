@@ -9,6 +9,10 @@
 @import "compass/layout/grid-background"; // siehe auch http://compass-style.org/reference/compass/layout/grid_background/
 @import "sassy-buttons";
 
+// from bootstrap
+@import "bootstrap/labels";
+
+// custom stuff
 @import "utilities";
 @import "type";
 @import "grid"; 
@@ -55,11 +59,10 @@ body {
 
 .hover {
   .hover-show {
-    width: 33%;
     display: none;
   }
   &:hover .hover-show {
-    -webkit-transition: display 1s ease-in;
+    -webkit-transition: display 3s ease-in;
     display: block;
   }
 }
