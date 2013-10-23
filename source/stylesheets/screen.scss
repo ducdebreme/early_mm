@@ -8,6 +8,7 @@
 @import "compass";
 @import "compass/layout/grid-background"; // siehe auch http://compass-style.org/reference/compass/layout/grid_background/
 @import "sassy-buttons";
+@import "color-schemer";
 
 // from bootstrap
 @import "bootstrap/labels";
@@ -18,7 +19,7 @@
 @import "grid"; 
 @import "animenu/animenu";
 
-// custom stuff
+// site-specific stuff
 @import "events"; 
 
 body {
@@ -45,9 +46,13 @@ body {
   }
 }
 
+// creating a color schema
+$cs-scheme: complement;
+$cs-primary: #F87F06;
 
+@include cs-test(cs-primary() cs-secondary() cs-tertiary());
 
-/* separation part of a page */
+/* separate parts of a page */
 .section {
   @extend .clearfix;
   @include padding-trailer(2);
