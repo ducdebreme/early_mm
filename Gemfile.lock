@@ -9,10 +9,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    color-schemer (0.2.7)
+      compass (~> 0.12)
+      compass-blend-modes (~> 0.0.2)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-blend-modes (0.0.2)
+      compass
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -119,6 +124,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  color-schemer
   compass
   middleman (~> 3.1.5)
   middleman-favicon-maker
