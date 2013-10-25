@@ -4,5 +4,32 @@
 .event-metadata {
 	.date, .place {
 		@extend h4;
+		color: $gray-light;
 	}
+}
+
+.datesheet {
+	& > span {
+		display: block;
+		text-align: center;
+		color: $gray-dark;
+	}
+	& .month {
+		font-size: 0.8 * $base-font-size;
+		font-weight: 700;
+		padding: 0 0.6em;
+	}
+	& .day {
+		font-size: 1.1667 * $base-font-size;
+	}
+	& .year {
+		font-size: 0.66 * $base-font-size;
+	}
+
+	display: inline-block;
+  // @include background(linear-gradient(top, $gray-lighter, #fff));
+  background-color: $gray-lighter;
+
+	border-right: 1px solid $gray-light;
+	border-bottom: 1px solid $gray-light;
 }
